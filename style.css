@@ -2,10 +2,7 @@ body {
   background-color: rgba(0, 0, 0, 0.925);
 }
 
-.home {
-  background-image: url(assets/elevated-view-laptop-earphones-crumpled-papers-pencil-blank-spiral-notepad-frame-black-background.jpg);
-  background-size: cover;
-}
+
 
 #navbarNav {
   display: flex;
@@ -47,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(22, 22, 22, 0.925);
+
 }
 
 .about>.left-pic>img {
@@ -84,8 +81,6 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(22, 22, 22, 0.925);
-
 }
 
 #skills>h2 {
@@ -105,7 +100,6 @@ body {
 
 .skill {
   padding: 12px 24px;
-  background-color: #222;
   border: 1px solid #00f2ff;
   border-radius: 5px;
   transition: 0.3s;
@@ -120,7 +114,6 @@ body {
 
 #projects {
   padding: 80px 40px;
-  background-color: rgba(22, 22, 22, 0.925);
 }
 
 #projects>h2 {
