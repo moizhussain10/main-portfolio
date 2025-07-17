@@ -2,10 +2,16 @@ body {
   background-color: rgba(0, 0, 0, 0.925);
 }
 
-
+#nav{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+}
 
 #navbarNav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
