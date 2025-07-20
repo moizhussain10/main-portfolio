@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moiz Hussain | Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -56,38 +57,49 @@
     <!-- Main Portfolio Content -->
     <div class="main-content">
         <section class="home">
-            <nav class="navbar navbar-expand-lg">
-                <div class="portfolio container-fluid">
-                    <a class="navbar-brand" href="#">Portfolio</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-info fw-bold fs-4" href="#" data-aos="fade-right">Portfolio</a>
+
+                    <!-- Toggle Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Collapsible Nav Links -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav" id="nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
+                                <a class="nav-link text-info fw-bold" href="#">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#About">About</a>
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+                                <a class="nav-link text-info fw-bold" href="#about">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#skills">Skills</a>
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
+                                <a class="nav-link text-info fw-bold" href="#skills">Skills</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#projects">Projects</a>
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
+                                <a class="nav-link text-info fw-bold" href="#projects">Projects</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div id="intro">
+
+
+            <div id="intro" data-aos="zoom-in">
                 <h1>Hi! I'M MOIZ <span>HUSSAIN</span></h1>
                 <p id="intro-para">I'm a Freelance UI/UX Designer and Developer based in Karachi, Pakistan.</p>
             </div>
         </section>
 
         <section class="about" id="About">
-            <div class="left-pic">
+            <div class="left-pic" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <img src="assets/image.jpeg" alt="">
             </div>
-            <div class="right-content">
+            <div class="right-content" data-aos="fade-left"  data-aos-offset="300"
+                data-aos-duration="500">
                 <h1>About <span>Me</span></h1>
                 <h2>Full Stack Developer!</h2>
                 <p>Hello everyone, I am Moiz Hussain, a web developer who loves to create and beautify websites. I enjoy
@@ -97,30 +109,30 @@
         </section>
 
         <section id="skills">
-            <h2>My Skills</h2>
+            <h2 data-aos="zoom-in">My Skills</h2>
             <div class="skills-grid">
-                <div class="skill">HTML5</div>
-                <div class="skill">CSS3</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">Git</div>
-                <div class="skill">Responsive Design</div>
+                <div class="skill"data-aos="fade-up" data-aos-delay="100">HTML5</div>
+                <div class="skill"data-aos="fade-up" data-aos-delay="200">CSS3</div>
+                <div class="skill"data-aos="fade-up" data-aos-delay="300">JavaScript</div>
+                <div class="skill"data-aos="fade-up" data-aos-delay="400">Git</div>
+                <div class="skill"data-aos="fade-up" data-aos-delay="500">Responsive Design</div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>My <span>Projects</span></h2>
+            <h2  data-aos="fade-down">My <span>Projects</span></h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="100">
                     <h3>E-commerce Web</h3>
                     <p>A fully responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
                     <a href="https://moizhussain10.github.io/e-commerce-web/" target="_blank">View Project</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
                     <h3>Weather App</h3>
                     <p>Real-time weather updates using OpenWeatherMap API and modern JS.</p>
                     <a href="https://moizhussain10.github.io/whether-app/" target="_blank">View Project</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="300">
                     <h3>News App</h3>
                     <p>A simple news app to get all updates of the whole world.</p>
                     <a href="https://moizhussain10.github.io/new-s-app/" target="_blank">View Project</a>
@@ -131,6 +143,14 @@
 
     <!-- Dragon Animation Script -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
